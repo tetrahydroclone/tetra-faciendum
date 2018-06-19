@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>faciendum: Dashboard</title>
+        <!-- ================= Favicon ================== -->
+        <!-- Standard -->
+        <link rel="shortcut icon" href="http://placehold.it/64.png/000/fff">
+        <!-- Retina iPad Touch Icon-->
+        <link rel="apple-touch-icon" sizes="144x144" href="http://placehold.it/144.png/000/fff">
+        <!-- Retina iPhone Touch Icon-->
+        <link rel="apple-touch-icon" sizes="114x114" href="http://placehold.it/114.png/000/fff">
+        <!-- Standard iPad Touch Icon-->
+        <link rel="apple-touch-icon" sizes="72x72" href="http://placehold.it/72.png/000/fff">
+        <!-- Standard iPhone Touch Icon-->
+        <link rel="apple-touch-icon" sizes="57x57" href="http://placehold.it/57.png/000/fff">
+        <!-- Styles -->
+        <link href="assets/css/lib/calendar2/semantic.ui.min.css" rel="stylesheet">
+        <link href="assets/css/lib/calendar2/pignose.calendar.min.css" rel="stylesheet">
+        <link href="assets/css/lib/chartist/chartist.min.css" rel="stylesheet">
+        <link href="assets/css/lib/font-awesome.min.css" rel="stylesheet">
+        <link href="assets/css/lib/themify-icons.css" rel="stylesheet">
+        <link href="assets/css/lib/owl.carousel.min.css" rel="stylesheet" />
+        <link href="assets/css/lib/owl.theme.default.min.css" rel="stylesheet" />
+        <link href="assets/css/lib/weather-icons.css" rel="stylesheet" />
+        <link href="assets/css/lib/menubar/sidebar.css" rel="stylesheet">
+        <link href="assets/css/lib/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/lib/helper.css" rel="stylesheet">
+        <link href="assets/css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <div class="sidebar sidebar-hide-to-small sidebar-shrink sidebar-gestures">
+            <div class="nano">
+                <div class="nano-content">
+                    <ul>
+                        <div class="logo"><a href="index.html"><!-- <img src="assets/images/logo.png" alt="" /> --><span>faciendum</span></a></div>
+                        <li class="label">Main</li>
+                        <li class="active"><a href="index.html"><i class="ti-home"></i> Dashboard </a></li>
+
+                        <li class="label">Forms</li>
+                        <li><a class="sidebar-sub-toggle"><i class="ti-agenda"></i> Cases <span class="sidebar-collapse-icon ti-angle-down"></span></a>
+                            <ul>
+                                <li><a href="#">Walk-in Transaction</a></li>
+                                <li><a href="#">Case Transaction</a></li>
+                                <li><a href="#">Archive</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="ti-receipt"></i> Invoice </a></li>
+
+                        <li class="label">Apps</li>
+                        <li><a href="#"><i class="ti-alert"></i> Alerts</a></li>
+                        <li><a href="#"><i class="ti-calendar"></i> Calendar </a></li>
+                        <li><a href="#"><i class="ti-bar-chart"></i> Visualizations</a></li>
+                        <li><a href="#"><i class="ti-user"></i> Accounts </a></li>
+                        <li><a href="#"><i class="ti-printer"></i> Reports </a></li>
+
+                        <li class="label">Extras</li>
+                        <li><a href="#"><i class="ti-stamp"></i> Tools</a></li>
+                        <li><a href="#"><i class="ti-harddrives"></i> Advanced</a></li>
+                        <li><a href="#"><i class="ti-panel"></i> Setup</a></li>
+                        <li><a href="#"><i class="ti-support"></i> Help/Support</a></li>
+                        <li><a href="login.html"><i class="ti-close"></i> Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- /# sidebar -->
+
+        <div class="header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="float-left">
+                            <div class="hamburger sidebar-toggle">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+                        <div class="float-right">
+                            <ul>
+
+                                <li class="header-icon dib"><i class="ti-bell"></i>
+                                    <div class="drop-down">
+                                        <div class="dropdown-content-heading">
+                                            <span class="text-left">Recent Notifications</span>
+                                        </div>
+                                        <div class="dropdown-content-body">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+													<img class="pull-left m-r-10 avatar-img" src="assets/images/avatar/3.jpg" alt="" />
+													<div class="notification-content">
+														<small class="notification-timestamp pull-right">02:34 PM</small>
+														<div class="notification-heading">Bizlogiks</div>
+														<div class="notification-text">new case added today </div>
+													</div>
+												</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+													<img class="pull-left m-r-10 avatar-img" src="assets/images/avatar/3.jpg" alt="" />
+													<div class="notification-content">
+                                                        <small class="notification-timestamp pull-right">01:34 PM</small>
+                                                        <div class="notification-heading">Bizlogiks</div>
+                                                        <div class="notification-text">new walk-in transaction </div>
+                                                    </div>
+												</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+													<img class="pull-left m-r-10 avatar-img" src="assets/images/avatar/3.jpg" alt="" />
+													<div class="notification-content">
+                                                        <small class="notification-timestamp pull-right">12:34 PM</small>
+                                                        <div class="notification-heading">Bizlogiks</div>
+                                                        <div class="notification-text">created a new invoice </div>
+                                                    </div>
+												</a>
+                                                </li>
+                                                <li class="text-center">
+                                                    <a href="#" class="more-link">See All</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="header-icon dib"><span class="user-avatar">Bizlogiks <i class="ti-angle-down f-s-10"></i></span>
+                                    <div class="drop-down dropdown-profile">
+                                        <div class="dropdown-content-heading">
+                                            <span class="text-left"><b>Manage Account</b></span>
+                                        </div>
+                                        <div class="dropdown-content-body">
+                                            <ul>
+                                                <li><a href="#"><i class="ti-user"></i> <span>Profile</span></a></li>
+                                                <li><a href="#"><i class="ti-settings"></i> <span>Setting</span></a></li>
+                                                <li><a href="#"><i class="ti-lock"></i> <span>Lock Screen</span></a></li>
+                                                <li><a href="login.html"><i class="ti-power-off"></i> <span>Logout</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-wrap">
+            <div class="main">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-8 p-r-0 title-margin-right">
+                            <div class="page-header">
+                                <div class="page-title">
+                                    <h1>Hello World! <span>Welcome, Bizlogiks.</span></h1>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /# column -->
+                        <div class="col-lg-4 p-l-0 title-margin-left">
+                            <div class="page-header">
+                                <div class="page-title">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                                        <li class="breadcrumb-item active">Home</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /# column -->
+                    </div>
+                    <!-- /# row -->
+                    <section id="main-content">
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="card">
+                                    <div class="stat-widget-one">
+                                        <div class="stat-icon dib"><i class="ti-pencil color-danger border-danger"></i></div>
+                                        <div class="stat-content dib">
+                                            <div class="stat-text">Pending Cases</div>
+                                            <div class="stat-digit">1,234</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="card">
+                                    <div class="stat-widget-one">
+                                        <div class="stat-icon dib"><i class="ti-folder color-black border-black"></i></div>
+                                        <div class="stat-content dib">
+                                            <div class="stat-text">Closed Cases</div>
+                                            <div class="stat-digit">1,234</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="card">
+                                    <div class="stat-widget-one">
+                                        <div class="stat-icon dib"><i class="ti-agenda color-primary border-primary"></i></div>
+                                        <div class="stat-content dib">
+                                            <div class="stat-text">Total Cases</div>
+                                            <div class="stat-digit">1,234</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="card">
+                                    <div class="stat-widget-one">
+                                        <div class="stat-icon dib"><i class="ti-credit-card color-success border-success"></i></div>
+                                        <div class="stat-content dib">
+                                            <div class="stat-text">Potential Income</div>
+                                            <div class="stat-digit">1,234</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="card">
+                                    <div class="card-title">
+                                        <h4>Visualizations Here</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="ct-bar-chart m-t-79"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="card">
+                                    <div class="card-title">
+                                        <h4>Case Per Category</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="ct-pie-chart"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="card bg-primary">
+                                            <div class="weather-widget">
+                                                <div id="weather-one" class="weather-one p-10"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="card">
+                                            <div class="testimonial-widget-one p-10">
+                                                <div class="testimonial-widget-one owl-carousel owl-theme">
+                                                    <div class="item">
+                                                        <div class="testimonial-content">
+                                                            <div class="testimonial-text">
+                                                                <i class="fa fa-quote-left"></i> Ramdom archived cases preview here... Ramdom archived cases preview here. Ramdom archived cases preview here. Ramdom cases. Ramdom cases.<i class="fa fa-quote-right"></i>
+                                                            </div>
+                                                            <img class="testimonial-author-img" src="assets/images/avatar/1.jpg" alt="" />
+                                                            <div class="testimonial-author">CASE 12-345</div>
+                                                            <div class="testimonial-author-position">01/02/2017</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="testimonial-content">
+                                                            <div class="testimonial-text">
+                                                                <i class="fa fa-quote-left"></i> Ramdom archived cases preview here... Ramdom archived cases preview here. Ramdom archived cases preview here. Ramdom here. <i class="fa fa-quote-right"></i>
+                                                            </div>
+                                                            <img class="testimonial-author-img" src="assets/images/avatar/1.jpg" alt="" />
+                                                            <div class="testimonial-author">CASE 24-6810</div>
+                                                            <div class="testimonial-author-position">02/04/2017</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="testimonial-content">
+                                                            <div class="testimonial-text">
+                                                                <i class="fa fa-quote-left"></i> Ramdom archived cases preview here... Ramdom archived cases preview here. Ramdom archived cases preview here. Ramdom here. <i class="fa fa-quote-right"></i>
+                                                            </div>
+                                                            <img class="testimonial-author-img" src="assets/images/avatar/1.jpg" alt="" />
+                                                            <div class="testimonial-author">CASE 36-912</div>
+                                                            <div class="testimonial-author-position">03/22/2017</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="year-calendar"></div>
+                                    </div>
+                                </div>
+                                <!-- /# card -->
+                            </div>
+                            <!-- /# column -->
+                            <div class="col-lg-4">
+                                <div class="card">
+                                    <div class="card-title">
+                                        <h4>Alerts Board </h4>
+
+                                    </div>
+                                    <div class="recent-comment m-t-15">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <a href="#"><img class="media-object" src="assets/images/avatar/1.jpg" alt="..."></a>
+                                            </div>
+                                            <div class="media-body">
+                                                <h4 class="media-heading color-primary">Case #12-456</h4>
+                                                <p>Texts here. Details here. </p>
+                                                <p class="comment-date">05/05/2018</p>
+                                            </div>
+                                        </div>
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <a href="#"><img class="media-object" src="assets/images/avatar/1.jpg" alt="..."></a>
+                                            </div>
+                                            <div class="media-body">
+                                                <h4 class="media-heading color-primary">Case #12-456</h4>
+                                                <p>Texts here. Details here. </p>
+                                                <p class="comment-date">05/05/2018</p>
+                                            </div>
+                                        </div>
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <a href="#"><img class="media-object" src="assets/images/avatar/1.jpg" alt="..."></a>
+                                            </div>
+                                            <div class="media-body">
+                                                <h4 class="media-heading color-primary">Case #12-456</h4>
+                                                <p>Texts here. Details here. </p>
+                                                <p class="comment-date">05/05/2018</p>
+                                            </div>
+                                        </div>
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <a href="#"><img class="media-object" src="assets/images/avatar/1.jpg" alt="..."></a>
+                                            </div>
+                                            <div class="media-body">
+                                                <h4 class="media-heading color-primary">Case #12-456</h4>
+                                                <p>Texts here. Details here. </p>
+                                                <p class="comment-date">05/05/2018</p>
+                                            </div>
+                                        </div>
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <a href="#"><img class="media-object" src="assets/images/avatar/1.jpg" alt="..."></a>
+                                            </div>
+                                            <div class="media-body">
+                                                <h4 class="media-heading color-primary">Case #12-456</h4>
+                                                <p>Texts here. Details here. </p>
+                                                <p class="comment-date">05/05/2018</p>
+                                            </div>
+                                        </div>
+                                        <div class="media no-border">
+                                            <div class="media-left">
+                                                <a href="#"><img class="media-object" src="assets/images/avatar/3.jpg" alt="..."></a>
+                                            </div>
+                                            <div class="media-body">
+                                                <h4 class="media-heading color-primary">Case #12-456</h4>
+                                                <p>Texts here. Details here. </p>
+                                                <p class="comment-date">05/05/2018</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /# card -->
+                            </div>
+                            <!-- /# column -->
+                            <!-- /# column -->
+                        </div>    
+
+                        <div class="row">    
+                            <div class="col-lg-12">
+                                <div class="card">
+                                    <div class="card-title pr">
+                                        <h4>Pending Cases</h4> <br><br>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                        <table id="bootstrap-data-table-export" class="table table-striped table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Reference Code</th>
+                                                        <th>Docket#</th>
+                                                        <th>Case Title/Parties</th>
+                                                        <th>Trial Court Venue</th>
+                                                        <th>Case Category</th>
+                                                        <th>Name of Client</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>#12-3456</td>
+                                                        <td>#2222</td>
+                                                        <td>Case Title Here</td>
+                                                        <td>Trial Court Venue Here</td>
+                                                        <td>Criminal Case</td>
+                                                        <td>Juan Pedro</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>#12-3456</td>
+                                                        <td>#2222</td>
+                                                        <td>Case Title Here</td>
+                                                        <td>Trial Court Venue Here</td>
+                                                        <td>Criminal Case</td>
+                                                        <td>Juan Pedro</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>#12-3456</td>
+                                                        <td>#2222</td>
+                                                        <td>Case Title Here</td>
+                                                        <td>Trial Court Venue Here</td>
+                                                        <td>Criminal Case</td>
+                                                        <td>Juan Pedro</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>#12-3456</td>
+                                                        <td>#2222</td>
+                                                        <td>Case Title Here</td>
+                                                        <td>Trial Court Venue Here</td>
+                                                        <td>Criminal Case</td>
+                                                        <td>Juan Pedro</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>#12-3456</td>
+                                                        <td>#2222</td>
+                                                        <td>Case Title Here</td>
+                                                        <td>Trial Court Venue Here</td>
+                                                        <td>Criminal Case</td>
+                                                        <td>Juan Pedro</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>#12-3456</td>
+                                                        <td>#2222</td>
+                                                        <td>Case Title Here</td>
+                                                        <td>Trial Court Venue Here</td>
+                                                        <td>Criminal Case</td>
+                                                        <td>Juan Pedro</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>#12-3456</td>
+                                                        <td>#2222</td>
+                                                        <td>Case Title Here</td>
+                                                        <td>Trial Court Venue Here</td>
+                                                        <td>Criminal Case</td>
+                                                        <td>Juan Pedro</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /# column -->
+                        </div>
+                        <!-- /# row -->
+
+
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="card">
+                                    <div class="card-title">
+                                        <h4>Tasks</h4>
+
+                                    </div>
+                                    <div class="todo-list">
+                                        <div class="tdl-holder">
+                                            <div class="tdl-content">
+                                                <ul>
+                                                    <li>
+                                                        <label>
+                                                        <input type="checkbox" checked><i></i><span>April 22, Hearing 1</span>
+                                                        <a href='#' class="ti-close"></a>
+                                                    </label>
+                                                    </li>
+                                                    <li>
+                                                        <label>
+                                                        <input type="checkbox"><i></i><span>Print midyear reports</span>
+                                                        <a href='#' class="ti-close"></a>
+                                                    </label>
+                                                    </li>
+                                                    <li>
+                                                        <label>
+                                                        <input type="checkbox"><i></i><span>May 1, Meeting with Bizlogiks team</span>
+                                                        <a href='#' class="ti-close"></a>
+                                                    </label>
+                                                    </li>
+                                                    <li>
+                                                        <label>
+                                                        <input type="checkbox"><i></i><span>May 2, Meeting with Bizlogiks team</span>
+                                                        <a href='#' class="ti-close"></a>
+                                                    </label>
+                                                    </li>
+                                                    <li>
+                                                        <label>
+                                                        <input type="checkbox"><i></i><span>May 3, Meeting with Bizlogiks team</span>
+                                                        <a href='#' class="ti-close"></a>
+                                                    </label>
+                                                    </li>
+                                                    <li>
+                                                        <label>
+                                                        <input type="checkbox"><i></i><span>May 4, Meeting with Bizlogiks team</span>
+                                                        <a href='#' class="ti-close"></a>
+                                                    </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <input type="text" class="tdl-new form-control" placeholder="Write new item and hit 'Enter'...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="card">
+                                    <div class="card-title pr">
+                                        <h4>Billing Statements</h4>
+
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                            <table class="table student-data-table m-t-20">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Billing#</th>
+                                                        <th>Case#</th>
+                                                        <th>Amount</th>
+                                                        <th>Status</th>
+                                                        <th>Client</th>
+                                                        <th>Date</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><label><input type="checkbox" value=""></label>#2901</td>
+                                                        <td>
+                                                            #12-1234
+                                                        </td>
+                                                        <td>
+                                                            ₱2000
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge badge-warning">Pending</span>
+                                                        </td>
+                                                        <td>
+                                                            Client Name
+                                                        </td>
+                                                        <td>
+                                                            01/02/2018
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><label><input type="checkbox" value=""></label>#2901</td>
+                                                        <td>
+                                                            #12-1234
+                                                        </td>
+                                                        <td>
+                                                            ₱2000
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge badge-warning">Pending</span>
+                                                        </td>
+                                                        <td>
+                                                            Client Name
+                                                        </td>
+                                                        <td>
+                                                            01/02/2018
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><label><input type="checkbox" value=""></label>#2901</td>
+                                                        <td>
+                                                            #12-1234
+                                                        </td>
+                                                        <td>
+                                                            ₱2000
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge badge-warning">Pending</span>
+                                                        </td>
+                                                        <td>
+                                                            Client Name
+                                                        </td>
+                                                        <td>
+                                                            01/02/2018
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><label><input type="checkbox" value=""></label>#2901</td>
+                                                        <td>
+                                                            #12-1234
+                                                        </td>
+                                                        <td>
+                                                            ₱2000
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge badge-warning">Pending</span>
+                                                        </td>
+                                                        <td>
+                                                            Client Name
+                                                        </td>
+                                                        <td>
+                                                            01/02/2018
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><label><input type="checkbox" value=""></label>#2901</td>
+                                                        <td>
+                                                            #12-1234
+                                                        </td>
+                                                        <td>
+                                                            ₱2000
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge badge-warning">Pending</span>
+                                                        </td>
+                                                        <td>
+                                                            Client Name
+                                                        </td>
+                                                        <td>
+                                                            01/02/2018
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /# column -->
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="footer">
+                                    <p>2018 © LawSys by <a href="http://bizlogiks.ph">Bizlogiks</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div id="search">
+            <button type="button" class="close">×</button>
+            <form>
+                <input type="search" value="" placeholder="type keyword(s) here" />
+                <button type="submit" class="btn btn-primary">Search</button>
+            </form>
+        </div>
+        <!-- jquery vendor -->
+        <script src="assets/js/lib/jquery.min.js"></script>
+        <script src="assets/js/lib/jquery.nanoscroller.min.js"></script>
+        <!-- nano scroller -->
+        <script src="assets/js/lib/menubar/sidebar.js"></script>
+        <script src="assets/js/lib/preloader/pace.min.js"></script>
+        <!-- sidebar -->
+
+        <!-- bootstrap -->
+
+        <script src="assets/js/lib/calendar-2/moment.latest.min.js"></script>
+        <!-- scripit init-->
+        <script src="assets/js/lib/calendar-2/semantic.ui.min.js"></script>
+        <!-- scripit init-->
+        <script src="assets/js/lib/calendar-2/prism.min.js"></script>
+        <!-- scripit init-->
+        <script src="assets/js/lib/calendar-2/pignose.calendar.min.js"></script>
+        <!-- scripit init-->
+        <script src="assets/js/lib/calendar-2/pignose.init.js"></script>
+        <!-- scripit init-->
+
+
+        <script src="assets/js/lib/weather/jquery.simpleWeather.min.js"></script>
+        <script src="assets/js/lib/weather/weather-init.js"></script>
+        <script src="assets/js/lib/chartist/chartist.min.js"></script>
+        <script src="assets/js/lib/chartist/chartist-init.js"></script>
+        <script src="assets/js/lib/owl-carousel/owl.carousel.min.js"></script>
+        <script src="assets/js/lib/owl-carousel/owl.carousel-init.js"></script>
+        <script src="assets/js/scripts.js"></script>
+        <!-- scripit init-->
+    </body>
+
+</html>
